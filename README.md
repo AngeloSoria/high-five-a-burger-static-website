@@ -1,0 +1,2 @@
+# High Five A's Burger
+This project is a static website I made wayback when I was in 12th grade and still exploring the fundamentals of developing a website. A lot of unmentained codes are inside and I'm not updating this project to preserve my history when I made this 😆
