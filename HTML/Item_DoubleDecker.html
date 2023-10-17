@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/UniversalStylesCSS.css">
+    <link rel="stylesheet" href="../CSS/ItemEditModule.css">
+    <link rel="shortcut icon" href="../Images/Icons/Logo.png" image="/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="../JS/FixNavOnMouseOver.js"></script>
+    <title>Edit Item - High Five A's Burger</title>
+</head>
+
+<body>
+
+    <div class="NavigationBar">
+        <div class="FlexBar">
+            <div class="LogoContainer">
+                <a href="HomeModule.html" class="ImageHomeLink">
+                    <button class="CompanyLogo"></button>
+                </a>
+            </div>
+
+            <div class="NavButtons">
+                <div class="FlexEffect">
+                    <div class="DropDownButtonMenu">
+                        <a href="HomeModule.html" class="NavLink" id="NavLink_Home" onmouseover="onHover('NavLinkStart_Home')" onmouseout="onStopHover('NavLinkEnd_Home')">
+                            <button id="NavLinkButton_Home">HOME</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="FlexEffect">
+                    <div class="DropDownButtonMenu DropDownButtonMenu_Menu">
+                        <a href="MenuModule.html" class="NavLink" id="NavLink_Menu" onmouseover="onHover('NavLinkStart_Menu')" onmouseout="onStopHover('NavLinkEnd_Menu')">
+                            <button id="NavLinkButton_Menu">MENU</button>
+                        </a>
+
+                        <div class="DropDownMenuContent" onmouseover="onHover('NavLinkStart_Menu')" onmouseout="onStopHover('NavLinkEnd_Menu')">
+                            <span class="MenuTitle">FEATURED ITEM</span>
+                            <a href="#">Double Decker</a>
+                            <a href="#">Single Decker</a>
+                            <a href="#">Fries Overload</a>
+                            <a href="#">Duo Overload</a>
+                            <span class="MenuTitle ReBorder">SPECIAL OFFERS</span>
+                            <a href="#">Special Ocations</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="FlexEffect">
+                    <div class="DropDownButtonMenu DropDownButtonMenu_MyBag">
+                        <a href="javascript:void(0);" class="NavLink" id="NavLink_MyBag" onclick="OpenMyBagModule()" onmouseover="onHover('NavLinkStart_MyBag')" onmouseout="onStopHover('NavLinkEnd_MyBag')">
+                            <button id="NavLinkButton_MyBag">MY BAG</button>
+                            <span class="MyBagNotification">1</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="FlexEffect">
+                    <div class="DropDownButtonMenu">
+                        <a href="OrderTrackerModule.html" class="NavLink" id="NavLink_OrderTracker" onmouseover="onHover('NavLinkStart_OrderTracker')" onmouseout="onStopHover('NavLinkEnd_OrderTracker')">
+                            <button id="NavLinkButton_OrderTracker">ORDER TRACKER</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="FlexEffect">
+                    <div class="DropDownButtonMenu">
+                        <a href="javascript:void(0);" class="NavLink" id="NavLink_LogIn" onclick="OpenLogInModule()" onmouseover="onHover('NavLinkStart_LogIn')" onmouseout="onStopHover('NavLinkEnd_LogIn')">
+                            <button id="NavLinkButton_LogIn" >LOG IN</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Contents">
+        <div class="ContentModule">
+            <div class="content-module-tab-left">
+                <div class="tab-general-item-icon-container">
+                    <img src="../Images/MenuItems/Burgers/DoubleDecker.png" alt="">
+                </div>
+                <div class="tab-general-item-name-container">
+                    <span>DOUBLE DECKER</span>
+                </div>
+                <div class="tab-general-quantity-container">
+                    <div class="tab-subtitle">Quantity</div>
+                    <div class="quantity-configure-container">
+                        <button>-</button>
+                        <div id="item-data-count-handler">1</div>
+                        <button>+</button>
+                    </div>
+                </div>
+                
+                <div class="tab-general-total-price">
+                    <div class="tab-subtitle">Price</div>
+                    <div class="tab-general-total-price-container">
+                        <span>PHP</span>
+                        <span id="total-price-handler">120</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-module-tab-right">
+                <div class="tab-right-content-title">
+                    <span>ADDONS</span>
+                </div>
+
+                <div class="right-content-tab">
+                    <div class="content-tab-title"><span>Patties:</span></div>
+                    
+                    <select class="content-select-addons addons-patties" id="content-addons-patties">
+                        <option value="Single Patties">Single Patties</option>
+                        <option value="Double Patties" selected>Double Patties</option>
+                        <option value="Triple Patties">Triple Patties</option>
+                    </select>
+                </div>
+
+                <div class="right-content-tab">
+                    <div class="content-tab-title"><span>Powder Flavor:</span></div>
+                    
+                    <select class="content-select-addons addons-patties" id="content-addons-patties">
+                        <option value="Cheese Powder">Cheese Powder</option>
+                        <option value="BBQ Powder" selected>BBQ Powder</option>
+                        <option value="Chilli Powder">Chilli Powder</option>
+                        <option value="Sour Cream Powder">Sour Cream Powder</option>
+                    </select>
+                </div>
+
+                <div class="right-content-tab">
+                    <div class="content-tab-title"><span>Cheese Content:</span></div>
+                    
+                    <select class="content-select-addons addons-patties" id="content-addons-patties">
+                        <option value="Single Melted Cheese">Single Melted Cheese</option>
+                        <option value="Double Melted Cheese" selected>Double Melted Cheese</option>
+                        <option value="Triple Melted Cheese">Triple Melted Cheese</option>
+                    </select>
+                </div>
+
+                <div class="right-content-tab">
+                    <div class="submit-tab-container">
+                        <button onclick="OpenNotificationModal()">ADD TO MY BAG</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="NotificationModalBG modalClose fadeOut" id="notification-main-modal">
+        <div class="modal-notification-container">
+            <div class="modal-notificaiton-main">
+                
+                <div class="modal-notification-content-icon-container">
+                    <img src="../Images/Icons/GIF/Dual-Ring-Icon-Maroon.png" class="modal-notification-content-icon icon-animation-spinning" id="modal-notification-content-icon" alt="Loading Icon">
+                </div>
+                
+                <div class="modal-notification-content-title">
+                    <span class="modal-notification-content-title-text" id="modal-notification-content-title-text">Processing...</span>
+                </div>
+
+                <div class="modal-notification-content-options modal-notification-options-disabled" id="modal-notification-content-options">
+                    <div class="content-option-button-container">
+                        <a href="#">
+                            <button class="option-button-1" onclick="CloseNotificationModal()">ADD MORE PRODUCTS</button>
+                        </a>
+                    </div>
+                    <div class="content-option-button-container">
+                        <a href="../HTML/CheckOutModule.html">
+                            <button class="option-button-2">PROCEED TO CHECKOUT</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MY BAG CONTENT -->
+    <div class="MyBagModalBG modalClose fadeOut" id="my-bag-main-modal">
+        <div class="MyBagModal">
+            <div class="UIModal">
+                <div class="ModalTop">
+                    <div class="ExitButtonFrame">
+                        <button onclick="CloseMyBagModule()">×</button>
+                    </div>
+
+                    <h2 class="MyBagTitle">
+                        MY BAG SUMMARY
+                    </h2>
+                </div>
+
+                <hr>
+
+                <div class="ModalCenter">
+                    <!-- ITEMS -->
+                    <div class="MyBagItem">
+                        <div>
+                            <img src="../Images/MenuItems/Burgers/DoubleDecker.png" alt="Item Image" id="ItemImage">
+                        </div>
+                        <div>
+                            <div class="Top">
+                                <span id="ItemName">Double Decker</span>
+                                <div id="Addons">
+                                    <span id="AddonName">Double Patties</span>
+                                    <span id="AddonName">BBQ Powder</span>
+                                    <span id="AddonName">Double Melted Cheese</span>
+                                </div>
+                            </div>
+                            <div class="Bottom">
+                                <button onclick="redirectToEditItem('item-double-decker')">EDIT</button>
+                                <button onclick="myBagRemoveItem('item-double-decker')">REMOVE</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="Top">
+                                <div class="Quantity">Qty.</div>
+                                <div id="ItemQuantity">1</div>
+                            </div>
+                            <div class="ItemPrice">
+                                <span class="ItemPrice">
+                                    <span>Php</span>
+                                    <span id="ItemValuePrice">120.00</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================= -->
+                </div>
+
+                <hr>
+
+                <div class="ModalBottom">
+                    <div class="StatusItemFrame">
+                        <div class="TotalStats">
+                            <div class="Subtotal">
+                                <span class="Text">SUBTOTAL</span>
+                                <span class="Text NumText">
+                                    <span>PHP</span>
+                                    <span id="SubtotalNumber">120</span>
+                                </span>
+                            </div>
+                            <div class="DeliveryFee">
+                                <span class="Text">DELIVERY FEE</span>
+                                <span class="Text NumText">
+                                    <span>PHP</span>
+                                    <span id="DeliveryFeeNumber">0</span>
+                                </span>
+                            </div>
+                            <div class="GrandTotal">
+                                <span class="Text">GRAND TOTAL</span>
+                                <span class="Text NumText">
+                                    <span>PHP</span>
+                                    <span id="SubtotalNumber">120</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="StatusButtonsFrame">
+                            <a href="javascript:void(0)">
+                                <button onclick="redirectToCheckOut()">PROCEED TO CHECKOUT</button>
+                            </a>
+                            <button class="closeModal" onclick="CloseMyBagModule()">CLOSE BAG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN CONTENT -->
+
+    <div class="LogInModalBG modalClose fadeOut" id="Log-In-Main-Modal">
+        <div class="LogInModalMainPanel">
+            <div class="LogInModal">
+                <div class="LogInContent">
+                    <div class="CloseModal">
+                        <button id="CloseLogInModal" onclick="CloseLogInModule()">×</button>
+                    </div>
+                    <div class="LogInLogoContent">
+                        <img src="../Images/Icons/CompanyLogoTransparent.png" alt="High Five A's Burger Logo">
+                        <span>Log In Account</span>
+                    </div>
+
+                    <div class="LogInFormContent">
+                        <form method="GET" target="_parent">
+                            <input type="email" name="login-email" placeholder="Email">
+                            <input type="password" name="login-password" placeholder="Password">
+
+                            <div class="LogInRememberContent">
+                                <input type="checkbox" name="login-remember" id="login-remember-form">
+                                <label for="login-remember-form">Remember Me</label>
+                            </div>
+
+                            <input type="submit" value="LOGIN">
+
+                            <a href="#" class="LogInFacebook">
+                                <button>LOGIN WITH FACEBOOK</button>
+                            </a>
+                        </form>
+
+                        <div class="SecondOptionContent">
+                            <div class="SecondOption_Top">
+                                <span>Don't have an account?</span>
+                                <a href="SignUpModule.html">Sign-Up</a>
+                            </div>
+                            <div class="SecondOption_Mid">
+                                <a href="#">FORGOT PASSWORD?</a>
+                            </div>
+                            <span>----------or----------</span>
+                            <div class="SecondOption_Bottom">
+                                <span>ORDER ITEM AS A GUEST UPON CHECKING OUT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="FooterContent">
+            <div class="footer-panel panel-content-one">
+                <h3>Delivery Hotlines</h3>
+                <h5>Indang Cavite</h5>
+                <code>0956 362 8650</code>
+            </div>
+            <div class="footer-panel panel-content-two">
+                <a href="ContactUsModule.html">Contact Us</a>
+                <a href="TermsAndConditionModule.html">Terms and Condition</a>
+                <a href="PrivacyPolicyModule.html">Privacy Policy</a>
+            </div>
+            <div class="footer-panel panel-content-three">
+                <span class="FollowText">Follow Us On</span>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/High-Five-As-Burger-101346007896581" target="_blank">
+                        <button class="social-button social-facebook"></button>
+                    </a>
+                    <a href="https://www.instagram.com/highfivea_burger/" target="_blank">
+                        <button class="social-button social-instagram"></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+<script src="../JS/PopUpNotification.js"></script>
+<script src="../JS/LogInModuleHandler.js"></script>
+<script src="../JS/MyBagModuleHandler.js"></script>
+</html>

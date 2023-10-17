@@ -1,0 +1,1001 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-image: url("../Images/Wallpapers/RepeatingBackgroundNewB.jpg");
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-size: 20%;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+
+.NavigationBar{
+    background-color:#ffa801;
+    width: 100%;
+    min-height: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.062);
+}
+
+.FlexBar{
+    background-color: rgba(255, 0, 0, 0);
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.ImageHomeLink{
+    background-color: rgba(240, 248, 255, 0);
+    width: 40%;
+}
+.CompanyLogo{
+    background-image: url("../Images/Icons/CompanyLogoWithText_Nor.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .1s;
+}
+
+.CompanyLogo:hover{
+    background-image: url("../Images/Icons/CompanyLogoWithText_Nor_Lighter.png");
+}
+
+
+.NavButtons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: rgba(64, 224, 208, 0);
+}
+
+.FlexEffect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavLink{
+    background-color: rgba(107, 61, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: Itim;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+}
+
+.NavLink button{
+    background-color: rgba(43, 255, 0, 0);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    font-family: Itim, Verdana;
+    font-size: 1.1em;
+    font-weight: 100;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.DropDownButtonMenu{
+    position: relative;
+    background-color: rgba(0, 4, 255, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.DropDownMenuContent{
+    display: none;
+    position: absolute;
+    background-color: #ffa801;
+    color:black;
+    min-width: 300px;
+    z-index: 1;
+    padding: 0px;
+    border-top: 5px solid maroon;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.DropDownMenuContent a{
+    display: block;
+    text-align: left;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: Itim, Verdana;
+}
+
+.DropDownMenuContent a:hover{
+    background-color: rgb(109, 3, 3);
+    color: white;
+}
+
+.DropDownButtonMenu_Menu:hover .DropDownMenuContent{
+    display: block;
+}
+
+
+
+/* THE TITLE CATEGORY FOR DROPDOWNMENU LIST */
+.MenuTitle{
+    padding: 2px;
+    font-family: Verdana;
+    text-transform: uppercase;
+    border-bottom: 2px solid maroon;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* THIS WILL ADD TOP BORDER FOR THE MENU TITLE*/
+.ReBorder{
+    border-top: 2px solid maroon;
+}
+
+/*CONTAINER OF THE MENU LIST IN THE DROPDOWNMENU */
+.DropDownHotlinesContent{
+    display: none;
+    position: absolute;
+    background-color: #ffa801;
+    color:black;
+    min-width: 300px;
+    z-index: 1;
+    padding: 0px;
+    border-top: 5px solid maroon;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* THE MENU LIST IN THE DROPDOWNMENU */
+.DropDownHotlinesContent .MenuListContent{
+    display: block;
+    padding: 5px;
+    color: black;
+    font-family: Itim, Verdana;
+}
+
+/* THE BUTTON THAT WILL CALL THE DROPDOWN LIST ONCE A MOUSE HOVERS IT */
+.DropDownButtonMenu_Hotlines:hover .DropDownHotlinesContent{
+    display: block;
+}
+
+/* THE NOTIFICATION OF NUMBER OF ITEMS IN THE BAG OF A CLIENT */
+.MyBagNotification{
+    background-color: maroon;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 30px;
+    margin-top: -2.5%;
+    margin-right: -10%;
+    position: absolute;
+    display: block;
+    text-align: center;
+    min-width: 13px;
+    top: 25%;
+    right: 12%;
+    padding: 2.5px;
+}
+
+.activeNavButton{
+    background-color: maroon !important;
+}
+.activeNavText{
+    color: white !important;
+}
+
+/* END OF NAVIGATION BAR */
+
+
+/* FOOTER */
+
+footer{
+    background-color: #ffa801;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.24);
+}
+
+.FooterContent{
+    background-color: rgba(128, 0, 0, 0);
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Itim;
+}
+
+.footer-panel{
+    background-color: rgba(102, 205, 171, 0);
+    height: 80px;
+    padding: 2px;
+    width: 240px;
+}
+.panel-content-one{
+    text-transform: uppercase;
+}
+.panel-content-one h3{
+    color: maroon;
+    font-weight: bold;
+}
+.panel-content-one code{
+    font-size: 1.2rem;
+}
+
+.panel-content-two{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: Arial;
+    user-select: none;
+}
+.panel-content-two a{
+    text-decoration: none;
+    color: black;
+    margin: 3px;
+    font-size: .8rem;
+    padding: 2px;
+}
+.panel-content-two a:hover{
+    /* text-decoration: underline; */
+    color: white;
+    background-color: maroon;
+}
+.panel-content-two .link-active{
+    color: white;
+    background-color: maroon;
+}
+
+.panel-content-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    user-select: none;
+}
+.panel-content-three .FollowText{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: maroon;
+    font-weight: bold;
+}
+
+.panel-content-three .social-links{
+    background-color: rgba(128, 0, 0, 0);
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-content-three .social-links a{
+    background-color: rgba(255, 255, 0, 0);
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+.panel-content-three .social-links .social-button{
+    width: 100%;
+    height: 100%;
+    border:  none;
+    cursor: pointer;
+    outline: none;
+}
+
+.panel-content-three .social-links .social-facebook{
+    background-color: transparent;
+    background-image: url("../Images/Icons/social-facebook-icon-black.png");
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.panel-content-three .social-links .social-facebook:hover{
+    background-image: url("../Images/Icons/social-facebook-icon-maroon.png");
+}
+
+.panel-content-three .social-links .social-instagram{
+    background-color: transparent;
+    background-image: url("../Images/Icons/social-instagram-icon-black.png");
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.panel-content-three .social-links .social-instagram:hover{
+    background-image: url("../Images/Icons/social-instagram-icon-maroon.png");
+}
+
+/* ====================================================================================== */
+
+/* MY BAG MODAL */
+.MyBagModalBG{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.MyBagModal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UIModal{
+    width: 75%;
+    height: 80%;
+    background-color: #ffa801;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Itim;
+    overflow-x: hidden;
+}
+
+.UIModal hr{
+    border: 1px solid maroon;
+    width: 100%;
+    margin: auto;
+}
+
+/* MODAL TOP */
+.ModalTop .ExitButtonFrame{
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ModalTop .ExitButtonFrame button{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.ModalTop .ExitButtonFrame button:hover{
+    color: rgb(0, 0, 0);
+}
+.ModalTop .MyBagTitle{
+    text-align: center;
+    padding: 5px;
+    font-size: 2em;
+}
+
+/* MODAL CENTER */
+.ModalCenter {
+    background-color: rgba(255, 255, 0, 0);
+    height: 45%; /*225px*/
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    overflow-x: hidden;
+}
+
+/* MY BAG ITEM */
+.MyBagItem{
+    background-color: #c0392b;
+    width: 45%;
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: 25% 45% 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.MyBagItem > div {
+    background-color: #c03a2b00;
+    width: 100%;
+    height: 100%;
+}
+
+.MyBagItem > div:nth-child(1){
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.MyBagItem > div:nth-child(1) img{
+    position: absolute;
+    width: 100%;
+}
+
+.MyBagItem > div:nth-child(2){
+    background-color: rgba(186, 85, 211, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.MyBagItem > div:nth-child(2) .Top{
+    color: yellow;
+    -webkit-text-stroke: 0px black;
+    font-size: 1.1rem;
+    font-family: Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.MyBagItem > div:nth-child(2) .Top #ItemName{
+    border-bottom: 1px solid yellow;
+}
+
+.MyBagItem > div:nth-child(2) .Top #Addons{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+}
+.MyBagItem > div:nth-child(2) .Top #Addons #AddonName{
+    margin: 2.5px;
+}
+
+.MyBagItem > div:nth-child(2) .Bottom{
+    background-color: rgba(127, 255, 212, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyBagItem > div:nth-child(2) .Bottom button{
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .25s;
+    margin: 0 2.5px 0 2.5px;
+}
+
+.MyBagItem > div:nth-child(2) .Bottom button:nth-child(1){
+    background-color: #f39c12;
+}
+.MyBagItem > div:nth-child(2) .Bottom button:nth-child(1):hover{
+    color: gray;
+    font-weight: bold;
+}
+
+.MyBagItem > div:nth-child(2) .Bottom button:nth-child(2){
+    background-color: maroon;
+    color: white;
+}
+.MyBagItem > div:nth-child(2) .Bottom button:nth-child(2):hover{
+    color: rgb(4, 105, 105);
+    font-weight: bold;
+}
+
+
+.MyBagItem > div:nth-child(3){
+    background-color: #ffa60100;
+    color: yellow;
+    -webkit-text-stroke: 0px black;
+    font-size: 1.1rem;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MyBagItem > div:nth-child(3) .Top{
+    display: flex;
+    background-color: rgba(153, 205, 50, 0);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MyBagItem > div:nth-child(3) .Top #ItemQuantity{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 3px;
+}
+
+
+/* MODAL BOTTOM */
+.ModalBottom{
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.ModalBottom .StatusItemFrame{
+    background-color: rgba(0, 0, 255, 0);
+    min-width: 40%;
+}
+
+.ModalBottom .StatusItemFrame .StatusButtonsFrame{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.ModalBottom .GrandTotal{
+    font-size: 1.25em;
+}
+
+.ModalBottom .StatusItemFrame .StatusButtonsFrame button{
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: Arial;
+    transition: 0.25s;
+    font-weight: lighter;
+}
+
+
+.ModalBottom .StatusItemFrame .StatusButtonsFrame a button{
+    background-color: #c0392b;
+    height: 50px;
+    color: white;
+    font-size: 1.1rem;
+}
+.ModalBottom .StatusItemFrame .StatusButtonsFrame a button:hover{
+    background-color: rgb(160, 15, 15);
+}
+
+.ModalBottom .StatusItemFrame .StatusButtonsFrame .closeModal{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.ModalBottom .StatusItemFrame .StatusButtonsFrame .closeModal:hover{
+    background-color: rgb(201, 199, 199);
+    color: rgb(0, 0, 0);
+}
+
+.ModalBottom .StatusItemFrame .TotalStats > div {
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.ModalBottom .StatusItemFrame .TotalStats > div .NumText{
+    background-color: rgba(128, 0, 0, 0);
+    min-width: 80px;
+}
+
+
+
+
+/* ========================================================================================= */
+
+/* LOG IN MODAL */
+.LogInModalBG{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.LogInModalMainPanel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogInModal{
+    width: 35%;
+    min-height: 600px;
+    background-color: #e69500;
+    border-radius: 5px;
+    border: 1px solid #ad7305;
+}
+
+.LogInContent{
+    background-color: rgba(128, 0, 0, 0);
+}
+
+.CloseModal{
+    background-color: rgba(128, 128, 128, 0);
+    height: 35px;
+    display: block;
+}
+
+.CloseModal #CloseLogInModal{
+    padding: 2px;
+    font-size: 2rem;
+    width: 40px;
+    height: 100%;
+    float: right;
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    color: #b87803;
+    /* font-weight: bold; */
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.CloseModal #CloseLogInModal:hover{
+    color: #865803;
+}
+
+.LogInLogoContent{
+    width: 100%;
+    min-height: 80px;
+    background-color: rgba(128, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogInLogoContent img{
+    width: 22%;
+    height: 100px;
+}
+
+.LogInLogoContent span{
+    padding: 5px;
+    color: maroon;
+    font-family: Itim;
+    font-size: 1.5rem;
+}
+
+.LogInFormContent{
+    padding: 5px;
+    background-color: rgba(128, 0, 0, 0);
+}
+
+.LogInFormContent form{
+    background-color: rgba(0, 128, 0, 0);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.LogInFormContent form input[type="email"], .LogInFormContent form input[type="password"]{
+    padding: 15px 10px 15px 10px;
+    outline: none;
+    margin: 5px;
+    height: 25px;
+    border: none;
+    box-shadow: inset 0 0 3px #00000057;
+    background-color: #be7f08;
+    font-family: Itim;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+
+.LogInFormContent form input::placeholder{
+    color: rgba(43, 42, 42, 0.507);
+}
+
+.LogInRememberContent{
+    background-color: rgba(255, 0, 0, 0);
+    /* padding: 5px; */
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LogInRememberContent input{
+    width: 15px;
+    height: 15px;
+}
+
+.LogInRememberContent label{
+    padding: 5px;
+    font-family: Itim;
+    cursor: pointer;
+    user-select: none;
+}
+
+.LogInFormContent form input[type="submit"]{
+    padding: 15px;
+    margin: 5px;
+    background-color: maroon;
+    border: none;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: .25s;
+}
+
+.LogInFormContent form input[type="submit"]:hover{
+    background-color: rgb(151, 2, 2);
+}
+
+.LogInFormContent form .LogInFacebook{
+    margin: 5px;
+    height: 50px;
+}
+
+.LogInFormContent form .LogInFacebook button{
+    width: 100%;
+    height: 100%;
+    padding: 12.5px;
+    background-color: #3b5998;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .25s;
+}
+
+.LogInFormContent form .LogInFacebook button:hover{
+    background-color: #2d4372;
+}
+
+.SecondOptionContent{
+    background-color: rgba(128, 0, 0, 0);
+    width: 90%;
+    margin: 10px auto auto auto;
+    text-align: center;
+    font-family: Itim;
+}
+
+.SecondOptionContent a{
+    color: maroon;
+}
+
+.SecondOptionContent a:hover{
+    color: rgb(219, 36, 36);
+}
+
+.SecondOptionContent div{
+    margin: 2.5px;
+}
+
+.SecondOptionContent .SecondOption_Top a{
+    font-size: 1.15rem;
+}
+
+
+/* LOGIN HANDLER */
+
+.bodyModalActive{
+    overflow: hidden;
+}
+
+.fadeIn{
+    opacity: 100%;
+}
+
+.fadeOut{
+    opacity: 0%;
+}
+
+.modalClose{
+    display: none;
+}
+
+/* END OF FOOTER */
+
+
+/* NOTIFICATION MODAL */
+
+.NotificationModalBG{
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* MODAL CONTAINER */
+.modal-notification-container{
+    background-color: rgba(0, 0, 255, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN MODAL */
+.modal-notificaiton-main{
+    background-color: #ffa801;
+    width: 30%;
+    min-height: 300px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    transition: .2s;
+    padding: 5px;
+}
+
+/* MODAL ICON CONTAINER */
+.modal-notification-content-icon-container{
+    background-color: rgba(240, 248, 255, 0);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MODAL ICON IMAGE */
+.modal-notification-content-icon{
+    background-color: rgba(250, 235, 215, 0);
+}
+
+/* MODAL TITLE */
+.modal-notification-content-title{
+    background-color: rgba(245, 185, 107, 0);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MODAL TITLE TEXT */
+.modal-notification-content-title-text{
+    font-family: "Poppins";
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* MODAL OPTIONS BUTTON */
+.modal-notification-content-options{
+    background-color: rgba(245, 222, 179, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+/* OPTIONS CONTAINER */
+.content-option-button-container{
+    background-color: rgba(64, 224, 208, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+/* OPTIONS BUTTON */
+.content-option-button-container a{
+    background-color: rgba(255, 99, 71, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.content-option-button-container a button{
+    padding: 10px 15px 10px 15px;
+    width: 250px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    transition: .2s;
+    font-family: Poppins;
+}
+/* BUTTON 1 */
+.option-button-1{
+    background-color: #c0392b;
+    color: white;
+}
+.option-button-1:hover{
+    background-color: #a72f22;
+}
+/* BUTTON 2 */
+.option-button-2{
+    background-color: #40739e;
+    color: white;
+}
+.option-button-2:hover{
+    background-color: #335f83;
+}
+
+
+/* DISABLE OPTION BUTTONS */
+.modal-notification-options-disabled{
+    display: none;
+}
+
+
+/* ANIMATION FOR ICONS */
+.icon-animation-spinning{
+    animation: spin360 .8s linear infinite;
+}
+
+.icon-animation-popup{
+    animation-name: popUp;
+    animation-iteration-count: 1;
+    animation-duration: .25s;
+    animation-timing-function: ease;
+
+    /* border: 4px solid black;
+    border-radius: 50%;
+    padding: 10px; */
+}
+
+/* 360 SPIN */
+@keyframes spin360{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* POPUP*/
+@keyframes popUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}

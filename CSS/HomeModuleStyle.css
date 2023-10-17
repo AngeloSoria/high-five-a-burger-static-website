@@ -1,0 +1,189 @@
+
+
+/*CONTENTS*/
+.Contents{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #ffa801;
+    min-height: 100vh;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* padding: 10px; */
+}
+
+/* CONTENT POSITION 1 */
+#CPOS_1{
+    background-color: rgb(255, 0, 0);
+    min-height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+/* MAIN CONTAINER OF SEARCH ITEM */
+.SearchBar{
+    background-color: rgba(0, 128, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 4px;
+    height: 100%;
+}
+
+/* THE CONTAINER OF INPUT AND SUBMIT TO POSITION */
+.SearchInput{
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* SEARCH INPUT FOR SEARCH ITEM */
+.SearchInput_Input{
+    width: 220px;
+    height: 25px;
+    margin: 0;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
+}
+
+/* THE SUBMIT BUTTON FOR SEARCH ITEM */
+.SearchInput_Button{
+    height: 25px;
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+/* SEARCH BUTTON HANDLER (THE CONTAINER OF SEARCH INPUT AND SUBMIT BUTTON) */
+.SearchInputButtonHandler{
+    display: none; /*Switch off the search input and button*/
+}
+
+/* ============= */
+
+/* CONTENT POSITION 2 */
+#CPOS_2{
+    width: 100%;
+    background-color: rgba(0, 0, 205, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*SLIDE SHOW*/
+.AutoSlideShow{
+    width: 100%;
+    background: rebeccapurple;
+}
+.AutoSlideShow img{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 6px; */
+    /* border: 4px solid red; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.slideShowRemotes{
+    background-color: #192026;
+    width: 100%;
+    display: flex;
+}
+
+.currentSlideBadge{
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: .5s;
+    /* cursor: pointer; */
+    opacity: 70%;
+}
+
+.activeSlide{
+    display: block;
+    background: rgb(255, 255, 255);
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: .5s;
+    /* cursor: pointer; */
+}
+
+/* FEATURED ITEMS */
+
+.FeaturedItems{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* THE CONTENT OF FEATURED ITEMS */
+.ItemColumn{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2px; */
+}
+
+.ItemColumn a{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.ItemImage{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0 rgb(3, 42, 151);
+    transition: .2s;
+}
+
+.ItemImage:hover{
+    border: 5px solid maroon;
+}
+
+.FeaturedTitle{
+    color: maroon;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Itim;
+    background: #ffa801;
+    width: 300px;
+    margin: 5px auto 10px auto;
+    box-shadow: 0px 5px 0 rgb(151, 3, 3);
+}
+
+
+/* FOOTER */
+
+
+

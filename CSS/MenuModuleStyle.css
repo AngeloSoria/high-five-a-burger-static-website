@@ -1,0 +1,397 @@
+.Contents{
+    background-color: rgba(221, 155, 155, 0);
+    width: 70%;
+    min-height: 100vh;
+    margin: 10px auto auto auto;
+    overflow-x: hidden;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.FoodMenuContent{
+    background-color: rgba(146, 60, 216, 0);
+    width: 100%;
+    margin: 3px;
+}
+
+.FilterBar{
+    background-color: #ffa601;
+    min-height: 50px;
+    width: 100%;
+    margin: auto auto 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Itim;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 5px;
+}
+
+.FilterBar .FilterTitle{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.FilterBar .FilterTitle #FilterTypeText{
+    font-style: italic;
+}
+
+.FilterSelectBar{
+    background-color: rgba(165, 42, 42, 0);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FilterSelectBar .SearchBar{
+    display: flex;
+    height: 31.5px;
+    border-radius: 5px;
+    border: 2px solid maroon;
+    font-family: Itim;
+    background-color: #ffa60100;
+    color: rgb(0, 0, 0);
+    outline: none;
+    margin-right: 5px;
+}
+.FilterSelectBar .SearchBar form{
+    display: flex;
+}
+
+.FilterSelectBar .SearchBar input[type='submit']{
+    background-color: maroon;
+    background-image: url("../Images/Icons/search.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.FilterSelectBar .SearchBar input[type='submit']:hover{
+    background-color: rgb(150, 5, 5);
+}
+
+.FilterSelectBar .SearchBar input[type='search']{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.FilterSelectBar .SearchBar input[type='search']::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.FilterSelectBar select{
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid maroon;
+    padding: 5px;
+    font-family: Itim;
+    background-color: #ffa60100;
+    color: rgb(0, 0, 0);
+    outline: none;
+    margin-right: 5px;
+}
+
+.FoodItemRow{
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+    min-height: 12%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.Item{
+    margin: 5px;
+    width: 32%;
+    height: 10%;
+    overflow: hidden;
+}
+
+.ItemLinkOrder{
+    background-color: #ffa801;
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .2s;
+}
+
+
+.ItemLinkOrder:hover button{
+    background-color: rgb(204, 13, 13);
+}
+
+
+.ItemLinkOrder .ItemImage{
+    width: 90%;
+    height: 180px;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 0, 0, 0);
+    margin: auto;
+    transition: .2s;
+}
+.ItemLinkOrder:hover .ItemImage{
+    background-size: 75%;
+    transform: rotate(2.5deg);
+}
+.ItemLinkOrder:hover{
+    background-color: #fab535;
+}
+
+.ItemLinkOrder .ItemName{
+    color: rgb(0, 0, 0);
+    font-family: Itim;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Yusei Magic', Itim;
+}
+
+.ItemLinkOrder .ItemDescription{
+    color: rgb(0, 0, 0);
+    font-family: Itim;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+.ItemLinkOrder button{
+    padding: 15px;
+    border: none;
+    font-family: Itim;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(139, 11, 11);
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+/* SELECTED ITEM */
+
+.selectedItemModalBG{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.637);
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: .5s;
+}
+
+.selectedModalContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectedItemModal{
+    width: 35%;
+    min-height: 150px;
+    background-color: #ffa801;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.493);
+    overflow: hidden;
+}
+
+/* Close Modal */
+.closeSelectedModal{
+    width: 100%;
+    background-color: rgba(147, 112, 216, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* X Button */
+.closeSelectedModal button{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: .25s;
+}
+.closeSelectedModal button:hover{
+    font-weight: bold;
+}
+
+
+.contentModal{
+    background-color: rgba(255, 0, 0, 0);
+    padding: 10px;
+}
+
+.selectedHolder{
+    background-color: rgba(153, 205, 50, 0);
+}
+
+/* Item Icon Holder */
+.selectedIcon{
+    width: 100%;
+    background-color: rgba(245, 222, 179, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Item Icon */
+.selectedIcon img{
+    width: 35%;
+}
+
+/* Item Name */
+.selectedIcon #selectedName{
+    font-family: 'Yusei Magic', Itim;
+    font-size: 2rem;
+}
+
+/* Selected Configure Quantities */
+.selectedContentDesc{
+    margin-top: 10px;
+}
+
+/* Configure Quantities Title */
+.selectedConfigureQuantity > div:nth-child(1){
+    background-color: rgba(128, 0, 0, 0);
+    width: 53%;
+    margin: auto;
+    font-family: Itim;
+    color: maroon;
+    padding: 5px 0 5px 0;
+}
+
+/* Configure Quantities */
+.selectedConfigureQuantity > div:nth-child(2){
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+/* Configure Quantities Buttons */
+.selectedConfigureQuantity > div:nth-child(2) button{
+    width: 10%;
+    background-color: #d35400;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: .2s;
+}
+/* Hover effect */
+.selectedConfigureQuantity > div:nth-child(2) button:hover{
+    background-color: #e67e22;
+}
+/* Configure Quantities Number */
+.selectedConfigureQuantity #selectedQuantity{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: Itim;
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    width: 30%;
+    padding: 5px;
+}
+/* Arrow Buttons Input */
+.selectedConfigureQuantity #selectedQuantity::-webkit-outer-spin-button,
+.selectedConfigureQuantity #selectedQuantity::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* Selected Price Container */
+.selectedPriceBox{
+    background-color: rgba(128, 0, 0, 0);
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Itim;
+}
+
+/* Selected Price Title */
+.selectedPriceBox > div:nth-child(1){
+    background-color: rgba(128, 0, 0, 0);
+    color: #273c75;
+    width: 42.5%;
+    padding: 5px 0 5px 0;
+}
+
+/* Selected Price Total */
+.selectedPriceBox > div:nth-child(2){
+    background-color: #273c75;
+    width: 40%;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Selected Price Total Number */
+.selectedPriceBox > div:nth-child(2) > span:nth-child(1){
+    font-size: 1.25rem;
+}
+.selectedPriceBox > div:nth-child(2) > span:nth-child(2){
+    font-size: 2rem;
+}
+
+
+/* ADD TO MY BAG Button */
+.selectedDescBottom{
+    background-color: rgba(128, 0, 0, 0);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectedDescBottom button{
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+.selectedDescBottom button:hover{
+    background-color: #c0392b;
+}

@@ -1,0 +1,190 @@
+.Contents{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*  CONTENTS MODULE CONTAINER */
+.ContentModule{
+    background-color: rgba(245, 222, 179, 0);
+    width: 60%;
+    display: flex;
+}
+
+/* CONTENT TABS */
+/* LEFT */
+.content-module-tab-left{
+    background-color: rgba(64, 224, 208, 0);
+    width: 30%;
+}
+
+/* CONTENT TAB ICON */
+.tab-general-item-icon-container{
+    background-color: rgba(216, 191, 216, 0);
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+}
+.tab-general-item-icon-container img{
+    width: 100%;
+}
+
+/* TAB TITLE */
+.tab-general-item-name-container{
+    background-color: rgba(0, 128, 128, 0);
+    font-family: Poppins;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-general-item-name-container span{
+    background-color: rgba(238, 130, 238, 0);
+    text-align: center;
+    color: #e84118;
+    font-size: 1.3rem;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* TAB QUANTITY CONTAINER */
+.tab-general-quantity-container{
+    margin-top: 10px;
+}
+/* SUBTITLES */
+.tab-subtitle{
+    font-family: Poppins;
+    color: #e84118;
+    font-weight: bold;
+    font-size: .8rem;
+}
+/* CONFIGURE QUANTITY */
+.quantity-configure-container{
+    background-color: #e8421800;
+    display: flex;
+    align-items: stretch;
+}
+/* CONFIGURE BUTTONS */
+.quantity-configure-container button{
+    padding: 5px;
+    border: none;
+    background-color: #e84118;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Poppins;
+    width: 20%;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+}
+/* HOVER EFFECT */
+.quantity-configure-container button:hover{
+    background-color: #be3e1e;
+}
+
+/* CONFIGURE NUMBERS */
+.quantity-configure-container #item-data-count-handler{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 1.2rem;
+} 
+
+/* TAB TOTAL PRICE */
+.tab-general-total-price{
+    margin-top: 10px;
+}
+/* TOTAL PRICE CONTAINER */
+.tab-general-total-price-container{
+    background-color: #fbc531;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+/* NUMBER */
+.tab-general-total-price-container #total-price-handler{
+    font-size: 2.25rem;
+}
+
+
+
+/* RIGHT */
+.content-module-tab-right{
+    background-color: rgba(255, 99, 71, 0);
+    width: 70%;
+    padding: 10px;
+}
+/* GENERAL TAB TITLE */
+.tab-right-content-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* PER ITEM CONTENT TAB */
+.right-content-tab{
+    margin-top: 10px;
+}
+/* PER TAB TITLE */
+.content-tab-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* SELECT ADDONS */
+.content-select-addons{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #000000;
+    font-family: Arial;
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+/* FOCUS EFFECT */
+.content-select-addons:focus{
+    box-shadow: 0 0 8px #e84118;
+}
+
+
+/* SUBMIT BUTTON */
+.submit-tab-container{
+    background-color: #e8421800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.submit-tab-container button{
+    padding: 10px;
+    width: 40%;
+    border: none;
+    background-color: #be3e1e;
+    color: white;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.submit-tab-container button:hover{
+    background-color: #e84118;
+}
+

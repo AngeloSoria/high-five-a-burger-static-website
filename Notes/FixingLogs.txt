@@ -1,0 +1,33 @@
+Instead of using select button
+
+revise select button
+single decker- add to cart
+
+other options to modify/identify quantity
+display total price
+before my bag
+add special item
+
+MYBAG:
+order summary
+modify order : Remove from mybag
+display total amount
+
+ORDER TRACKER
+
+Deliver on its way
+
+LOGIN MODULE
+
+ADD CREATE ACCOUNT
+
+INCLUDE UI in sign up : Account creating page
+Order History?
+
+FORGOT PASSWORD
+
+
+TEST DATA: 
+
+ORDER HISTORY UI
+IMPROVE FONT STYLE ON PRODUCTS

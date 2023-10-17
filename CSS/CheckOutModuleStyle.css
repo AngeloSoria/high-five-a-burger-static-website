@@ -1,0 +1,264 @@
+.Contents{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*  CONTENTS MODULE CONTAINER */
+.ContentModule{
+    background-color: rgba(245, 222, 179, 0);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* TAB LEFT */
+.contents-tab-left{
+    background-color: rgba(127, 255, 212, 0);
+    width: 60%;
+}
+
+/* CONTENTS TITLE CONTAINER */
+.contents-title-container{
+    display: flex;
+    font-family: Poppins;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+.contents-title-container > *{
+    padding: 15px;
+}
+.contents-title-container .title-tag-1{
+    width: 60%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.contents-title-container .title-tag-2{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .9rem;
+}
+
+/* TAB LEFT || ITEM CONTAINER */
+.contents-item-data-container{
+    background-color: rgba(231, 161, 161, 0);
+    margin-top: 10px;
+}
+
+/* PER ITEMS DATA TAB */
+.item-data-tab{
+    background-color: rgba(147, 112, 216, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO */
+.item-data-tab .item-tab-info{
+    background-color: rgba(64, 224, 208, 0);
+    display: flex;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA ICON CONTAINER */
+.item-data-tab .item-tab-info .item-data-icon-container{
+    background-color: rgba(216, 191, 216, 0);
+    width: 25%;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA ICON CONTAINER => IMG */
+.item-data-tab .item-tab-info .item-data-icon-container img{
+    background-color: rgba(216, 191, 216, 0);
+    width: 100%;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA NAME AND ADDONS CONTAINER */
+.item-data-name-and-addons-container{
+    background-color: rgba(216, 191, 216, 0);
+    width: 35%;
+    font-family: Poppins;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA NAME AND ADDONS CONTAINER => ITEM DATA NAME */
+.item-data-name-container{
+    background-color: rgba(245, 222, 179, 0);
+}
+#item-data-name{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #d63031;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA NAME AND ADDONS CONTAINER => ITEM DATA ADDONS */
+.item-data-addons-container{
+    background-color: rgba(245, 222, 179, 0);
+    display: flex;
+    flex-direction: column;
+}
+#item-data-addons-tab{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA QUANTITY CONFIGURE  */
+.item-data-quantity-configure-container{
+    background-color: rgba(245, 222, 179, 0);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* QUANTITY CONFIGURE CONTAINER */
+.quantity-configure-container{
+    background-color: rgba(250, 235, 215, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA QUANTITY CONFIGURE => COUNTER */
+#quantity-item-count-handler{
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA QUANTITY CONFIGURE => BUTTONS */
+.quantity-configure-button{
+    padding: 5px 12px 5px 12px;
+    background-color: #ad2525;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: .2s;
+}
+.quantity-configure-button:hover{
+    background-color: #851616;
+}
+
+/* ITEM DATA => ITEM DATA TAB INFO => ITEM DATA QUANTITY PRICE */
+.item-data-total-quantity-price-container{
+    background-color: rgba(245, 222, 179, 0);
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+
+/* ITEM DATA => ITEM TAB CONFIGURE ITEM CONTAINER */
+.item-tab-configure-item-container{
+    background-color: rgba(245, 222, 179, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* BUTTONS CONTAINER */
+.configure-item-buttons-container{
+    background-color: rgba(175, 71, 71, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+/* BUTTONS */
+.configure-item-buttons-container .configure-item-button{
+    background-color: #85161600;
+    color: #d63031;
+    font-family: Arial;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .9rem;
+}
+/* HOVER EFFECT */
+.configure-item-buttons-container .configure-item-button:hover{
+    text-decoration: underline;
+}
+
+
+
+/* TAB RIGHT */
+.contents-tab-right{
+    background-color: rgba(137, 43, 226, 0);
+    width: 40%;
+    padding: 15px;
+}
+
+/* ORDER SUMMARY CONTAINER */
+.contents-order-summary-container{
+    background-color: #dfe6e9;
+    padding: 15px;
+    font-family: Poppins;
+    color: black;
+    border-radius: 4px;
+}
+
+/* ORDER SUMMARY TITLE CONTAINER */
+.order-summary-title-container{
+    background-color: rgba(128, 128, 128, 0);
+}
+/* ORDER SUMMARY TITLE TEXT */
+.order-summary-title{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ORDER SUMMARY DATA CONTAINER */
+.order-summary-data-container{
+    background-color: rgba(240, 255, 240, 0);
+    margin-top: 20px;
+}
+
+/* ORDER SUMMARY DATA */
+.order-summary-data{
+    background-color: rgba(255, 105, 180, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* GRAND TOTAL TEXT */
+.order-summary-data-grand-total{
+    color: #f0402d;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ORDER SUMMARY NEXT CONTAINER */
+.contents-order-summary-next-container{
+    background-color: rgba(245, 222, 179, 0);
+    margin-top: 10px;
+}
+/* BUTTON */
+.contents-order-summary-next-container button{
+    padding: 15px 30px 15px 30px;
+    border: none;
+    background-color: #d63031;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+}
+/* HOVER EFFECT */
+.contents-order-summary-next-container button:hover{
+    background-color: #ad2525;
+}

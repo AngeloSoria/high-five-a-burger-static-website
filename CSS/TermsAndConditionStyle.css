@@ -1,0 +1,39 @@
+/*CONTENTS*/
+.Contents{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #ffa801;
+    min-height: 100vh;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    font-family: Itim;
+    text-align: start;
+}
+
+.Contents h2{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 5px;
+}
+
+.Contents h3{
+    font-size: 1.5rem;
+}
+
+.Contents p{
+    font-size: 1.2rem;
+}
+
+.horizontal-line{
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li{
+    text-decoration: dotted;
+    margin-left: 30px;
+}

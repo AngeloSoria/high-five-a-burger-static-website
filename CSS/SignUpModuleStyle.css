@@ -1,0 +1,251 @@
+.Contents{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*  CONTENTS MODULE CONTAINER */
+.ContentModule{
+    background-color: rgba(245, 222, 179, 0);
+    width: 60%;
+}
+
+/* CONTENT MODULE TITLE */
+.content-module-title{
+    font-family: 'Yusei Magic', Arial;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 10px solid #ffa801;
+}
+/* DIV TITLES */
+.content-module-title div:nth-child(1){
+    border-right: 5px solid #ffa801;
+    padding: 10px;
+    color: #e84118;
+}
+/* H2 */
+.content-module-title h2{
+    font-size: 3rem;
+}
+/* H3 */
+.content-module-title h3{
+    font-size: 1rem;
+}
+
+/* DIV P, HINT */
+.content-module-title div:nth-child(2){
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+
+/* CONTENT FORM */
+.content-module-form{
+    background-color: rgba(102, 205, 171, 0);
+    padding: 10px;
+}
+
+/* CONTENT SUBTITLE */
+.content-module-form .content-subtitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+}
+
+
+/* FORM ITEMS */
+/* FORM DIV */
+.content-module-form-div{
+    background-color: rgba(147, 112, 216, 0);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* FORM LABEL TITLE */
+.form-label-title{
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* FORM INPUT CONTENT */
+.form-input-content{
+    margin-top: 5px;
+}
+/* FORM SELECT/LABEL BOX */
+.form-input-content > *{
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    transition: .2s;
+    font-family: "Poppins";
+}
+/* FORM SELECT/LABEL BOX ONFOCUS */
+.form-input-content > *:focus{
+    box-shadow: 0 0 2.5px #ffa801, 0 0 2.5px #e84118;
+}
+
+/* FULL NAME FORM */
+/* FORM INPUT DEFINED */
+.form-input-fullname{
+    background-color: #e8421800;
+    display: block;
+}
+/* FORM SELECT/LABEL BOX MARGIN */
+.form-input-content > *{
+    margin-right: 20px;
+}
+/* FORM INPUT LASTNAME */
+.form-input-content #register-lastname{
+    width: 30%;
+}
+
+
+/* LOCATION FORM TAB 1*/
+.form-input-location{
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/* LOCATION TAB 1 */
+.location-tab-1 > *{
+    width: 45%;
+    margin: 0;
+}
+/* LOCATION TAB 2 */
+.location-tab-2 > *, .location-tab-2 input{
+    width: 45%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+}
+/* LOCATION TAB 3 */
+.location-tab-3 > *{
+    width: 45%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+}
+
+/* LOCATION TAB 4 */
+.location-tab-4 > *{
+    width: 100%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+}
+
+/* LOCATION TAB 5 */
+.location-tab-5 > *{
+    width: 100%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+}
+
+/* LOCATION TAB 6 */
+.location-tab-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #e8421800;
+}
+.location-tab-6 > *:nth-child(1){
+    width: 50%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+}
+.location-tab-6 input[type="number"]::-webkit-outer-spin-button, 
+.location-tab-6 input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.location-tab-6 > *:nth-child(2){
+    width: 50%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+    padding: 0;
+    border: none;
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+
+/* LOCATION TAB 7 */
+.location-tab-7 > *{
+    width: 45%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+}
+
+/* LOCATION TAB 8 */
+.location-tab-8{
+    background-color: #e8421800;
+}
+.location-tab-8 > *{
+    width: 45%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+    border: none;
+    font-size: .85rem;
+}
+.location-tab-8 > * > *{
+    cursor: pointer;
+}
+
+
+/* LOCATION TAB 9 */
+.location-tab-9 > *{
+    width: 30%;
+    margin: 0;
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    box-sizing: content-box;
+    border: none;
+    background-color: #fab9a8;
+    color: white;
+    cursor: not-allowed;
+}
+
+
+/* LOCATION TAB 10 */
+.location-tab-10{
+    background-color: #e8421800;
+}
+.location-tab-10 > *{
+    width: 30%;
+    margin: 0;
+    border: none;
+    cursor: not-allowed;
+    padding: 0;
+}
+.location-tab-10 > * button{
+    background-color: #808080;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.location-tab-10 > * button:hover{
+    background-color: #5f5f5f;
+}
