@@ -1,2 +1,9 @@
 # High Five A's Burger
-This project is a static website I made wayback when I was in 12th grade and still exploring the fundamentals of developing a website. A lot of unmentained codes are inside and I'm not updating this project to preserve my history when I made this 😆
+
+Welcome to the High Five A's Burger static website repository! This project is a static website created during my 12th grade while learning the basics of web development. It showcases the fundamentals of HTML, CSS, and JavaScript.
+
+### Features
+
+- **HTML**: Structure of the website, including various pages and content.
+- **CSS**: Styling and layout of the website to make it visually appealing.
+- **JavaScript**: Basic interactivity and dynamic features.
